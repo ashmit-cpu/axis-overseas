@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+.OurServices .row {
+  display: flex;
+}
+.OurServices .row .left-col {
+  width: 35%;
+  padding: 60px;
+  background-color: rgb(57, 176, 218);
+}
+.OurServices .row .left-col .content {
+  border: 2px solid white;
+  padding: 40px;
+  position: relative;
+  width: 130%;
+}
+.OurServices .row .left-col .content h2 {
+  font-size: 44px;
+  padding-bottom: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+@media all and (max-width: 1200px) {
+  .OurServices .row .left-col .content h2 {
+    font-size: 42px;
+  }
+}
+@media all and (max-width: 992px) {
+  .OurServices .row .left-col .content h2 {
+    font-size: 40px;
+  }
+}
+@media all and (max-width: 768px) {
+  .OurServices .row .left-col .content h2 {
+    font-size: 38px;
+  }
+}
+@media all and (max-width: 576px) {
+  .OurServices .row .left-col .content h2 {
+    font-size: 28px;
+  }
+}
+.OurServices .row .left-col .content p {
+  font-size: 14px;
+  color: white;
+  width: 90%;
+}
+.OurServices .row .right-col {
+  width: 65%;
+  background-color: rgb(14, 72, 94);
+  position: relative;
+  z-index: -1;
+}
+.OurServices .row .right-col .evaluation-bg {
+  position: absolute;
+  top: 20%;
+  left: -50px;
+}
+.OurServices .row .right-col .evaluation-bg img {
+  width: 200px;
+}

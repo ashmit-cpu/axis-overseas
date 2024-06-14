@@ -1,0 +1,53 @@
+@use '../../../Partials/variables';
+
+.OurServices {
+    .row {
+        display: flex;
+
+        .left-col {
+            width: 35%;
+            padding: 60px;
+            background-color: rgb(57, 176, 218);
+
+            .content {
+
+                border: 2px solid white;
+                padding: 40px;
+                position: relative;
+                // left: 100px;
+                width: 130%;
+
+                h2{
+                   @include variables.h2_style;
+                    color: white;
+                      
+                }
+                p{
+                    font-size: 14px;
+                    color: white;
+                    width: 90%;
+                }
+
+            }
+
+        }
+
+        .right-col {
+            width: 65%;
+            background-color: variables.$primary_color;
+            position: relative;
+            z-index: -1;
+
+            .evaluation-bg{
+                position: absolute;
+                top: 20%;
+                left: -50px;
+
+                img{
+                    width: 200px;
+
+                }
+            }
+        }
+    }
+}

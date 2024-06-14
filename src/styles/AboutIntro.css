@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+.AboutIntro .container {
+  padding: 80px 80px;
+}
+@media all and (min-width: 2000px) {
+  .AboutIntro .container {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 1200px) {
+  .AboutIntro .container {
+    padding: 80px 60px;
+  }
+}
+@media all and (max-width: 992px) {
+  .AboutIntro .container {
+    padding: 80px 30px;
+  }
+}
+@media all and (max-width: 768px) {
+  .AboutIntro .container {
+    padding: 80px 26px;
+  }
+}
+@media all and (max-width: 576px) {
+  .AboutIntro .container {
+    padding: 50px 14px;
+  }
+}
+.AboutIntro .container .row {
+  display: flex;
+}
+@media all and (max-width: 992px) {
+  .AboutIntro .container .row {
+    flex-direction: column;
+  }
+}
+.AboutIntro .container .row .left-col {
+  width: 50%;
+}
+@media all and (max-width: 992px) {
+  .AboutIntro .container .row .left-col {
+    text-align: center;
+    width: 100%;
+  }
+}
+.AboutIntro .container .row .left-col img {
+  width: 550px;
+}
+@media all and (max-width: 1400px) {
+  .AboutIntro .container .row .left-col img {
+    width: 500px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .AboutIntro .container .row .left-col img {
+    width: 450px;
+  }
+}
+@media all and (max-width: 576px) {
+  .AboutIntro .container .row .left-col img {
+    width: 300px;
+  }
+}
+.AboutIntro .container .row .right-col {
+  width: 50%;
+}
+@media all and (max-width: 992px) {
+  .AboutIntro .container .row .right-col {
+    width: 100%;
+    padding: 60px 0;
+  }
+}
+.AboutIntro .container .row .right-col h2 {
+  font-size: 44px;
+  padding-bottom: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  color: rgb(14, 72, 94);
+}
+@media all and (max-width: 1200px) {
+  .AboutIntro .container .row .right-col h2 {
+    font-size: 42px;
+  }
+}
+@media all and (max-width: 992px) {
+  .AboutIntro .container .row .right-col h2 {
+    font-size: 40px;
+  }
+}
+@media all and (max-width: 768px) {
+  .AboutIntro .container .row .right-col h2 {
+    font-size: 38px;
+  }
+}
+@media all and (max-width: 576px) {
+  .AboutIntro .container .row .right-col h2 {
+    font-size: 28px;
+  }
+}
+.AboutIntro .container .row .right-col h2 span {
+  color: rgb(237, 104, 76);
+}
+.AboutIntro .container .row .right-col p {
+  font-size: 17px;
+  color: rgb(28, 28, 28);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  line-height: 1.275;
+  font-weight: 500;
+}
+@media all and (max-width: 992px) {
+  .AboutIntro .container .row .right-col p {
+    font-size: 16px;
+  }
+}
+.AboutIntro .container .row .right-col .icon-card-section {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+.AboutIntro .container .row .right-col .icon-card-section .card {
+  text-align: center;
+}
+.AboutIntro .container .row .right-col .icon-card-section .card img {
+  width: 60px;
+  padding: 10px 0;
+}
+@media all and (max-width: 1400px) {
+  .AboutIntro .container .row .right-col .icon-card-section .card img {
+    padding: 6px 0;
+    width: 50px;
+  }
+}
+.AboutIntro .container .row .right-col .icon-card-section .card h3 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  background: linear-gradient(90deg, rgb(251, 194, 31) 0%, rgb(235, 86, 59) 55%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.AboutIntro .container .row .right-col .bullet-points ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media all and (max-width: 768px) {
+  .AboutIntro .container .row .right-col .bullet-points ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.AboutIntro .container .row .right-col .bullet-points ul li {
+  display: flex;
+  align-items: top;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  padding: 6px 4px;
+}
+.AboutIntro .container .row .right-col .bullet-points ul li span {
+  margin-right: 6px;
+}
+.AboutIntro .container .row .right-col .bullet-points ul li a {
+  text-decoration: none;
+  color: rgb(14, 72, 94);
+}
+.AboutIntro .container .row .right-col .bullet-points ul li a:hover {
+  text-decoration: underline;
+  color: rgb(237, 104, 76);
+}

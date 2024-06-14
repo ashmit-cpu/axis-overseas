@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+.Herosection .row {
+  display: flex;
+}
+@media all and (max-width: 992px) {
+  .Herosection .row {
+    flex-direction: column;
+  }
+}
+.Herosection .row .left-col {
+  width: 45%;
+}
+@media all and (max-width: 992px) {
+  .Herosection .row .left-col {
+    width: 100%;
+  }
+}
+.Herosection .row .left-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media all and (max-width: 992px) {
+  .Herosection .row .left-col img {
+    max-height: 400px;
+  }
+}
+.Herosection .row .right-col {
+  width: 55%;
+  position: relative;
+  padding: 80px 40px;
+}
+@media all and (max-width: 992px) {
+  .Herosection .row .right-col {
+    width: 100%;
+    margin-top: -6px;
+  }
+}
+@media all and (max-width: 576px) {
+  .Herosection .row .right-col {
+    padding: 60px 14px;
+  }
+}
+.Herosection .row .right-col h2 {
+  font-size: 44px;
+  padding-bottom: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+@media all and (max-width: 1200px) {
+  .Herosection .row .right-col h2 {
+    font-size: 42px;
+  }
+}
+@media all and (max-width: 992px) {
+  .Herosection .row .right-col h2 {
+    font-size: 40px;
+  }
+}
+@media all and (max-width: 768px) {
+  .Herosection .row .right-col h2 {
+    font-size: 38px;
+  }
+}
+@media all and (max-width: 576px) {
+  .Herosection .row .right-col h2 {
+    font-size: 28px;
+  }
+}
+.Herosection .row .right-col p {
+  color: white;
+  width: 80%;
+}
+@media all and (max-width: 576px) {
+  .Herosection .row .right-col p {
+    width: 100%;
+  }
+}
+.Herosection .row .right-col .bg-img {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.Herosection .row .right-col .bg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Herosection .row .right-col form input,
+.Herosection .row .right-col form textarea {
+  padding: 10px 14px;
+  margin: 14px 0;
+  width: 50%;
+  max-width: 100%;
+  background-color: #fafafa;
+  color: rgb(14, 72, 94);
+  border-radius: 6px;
+  border: none;
+}
+@media all and (max-width: 576px) {
+  .Herosection .row .right-col form input,
+  .Herosection .row .right-col form textarea {
+    width: 100%;
+  }
+}
+.Herosection .row .right-col form input::placeholder,
+.Herosection .row .right-col form textarea::placeholder {
+  color: rgb(14, 72, 94);
+  font-size: 14px;
+}
+.Herosection .row .right-col form button {
+  border-radius: 6px;
+  background-color: rgb(14, 72, 94);
+  padding: 12px 14px;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.Herosection .row .right-col form button span {
+  margin-left: 3px;
+}
+.Herosection .row .right-col form button span img {
+  width: 14px;
+}
+.Herosection .row .right-col .woman-standing {
+  position: absolute;
+  right: 60px;
+  bottom: -40px;
+}
+@media all and (max-width: 1400px) {
+  .Herosection .row .right-col .woman-standing {
+    right: 20px;
+  }
+}
+.Herosection .row .right-col .woman-standing img {
+  width: 260px;
+}
+@media all and (min-width: 1600px) {
+  .Herosection .row .right-col .woman-standing img {
+    width: 330px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .Herosection .row .right-col .woman-standing img {
+    width: 230px;
+  }
+}
+@media all and (max-width: 1100px) {
+  .Herosection .row .right-col .woman-standing img {
+    width: 220px;
+  }
+}
+@media all and (max-width: 576px) {
+  .Herosection .row .right-col .woman-standing img {
+    display: none;
+  }
+}

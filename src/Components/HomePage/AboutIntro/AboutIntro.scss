@@ -1,0 +1,144 @@
+@use '../../../Partials/variables';
+
+.AboutIntro {
+
+    .container {
+        @include variables.container_padding;
+
+        .row {
+            display: flex;
+            // align-items: end;
+
+            @media all and (max-width: 992px) {
+                flex-direction: column;
+            }
+
+            .left-col {
+                width: 50%;
+
+                @media all and (max-width: 992px) {
+                    text-align: center;
+                    width: 100%;
+                }
+
+                img {
+                    width: 550px;
+
+                    @media all and (min-width: 2000px) {}
+
+                    @media all and (max-width: 1400px) {
+                        width: 500px;
+
+                    }
+
+                    @media all and (max-width: 1200px) {
+                        width: 450px;
+
+                    }
+
+                    @media all and (max-width: 992px) {}
+
+                    @media all and (max-width: 768px) {}
+
+                    @media all and (max-width: 576px) {
+                        width: 300px;
+
+                    }
+                }
+            }
+
+            .right-col {
+                width: 50%;
+
+                @media all and (max-width: 992px) {
+                    width: 100%;
+                    padding: 60px 0;
+                }
+
+
+                h2 {
+                    @include variables.h2_style;
+                    color: variables.$primary_color;
+
+
+
+                    span {
+                        color: variables.$secondary_color;
+                    }
+
+                }
+
+                p {
+                    @include variables.p_style;
+                }
+
+                .icon-card-section {
+                    padding: 30px 0;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: end;
+
+                    .card {
+                        text-align: center;
+
+                        img {
+                            width: 60px;
+                            padding: 10px 0;
+
+                            @media all and (max-width: 1400px) {
+                                padding: 6px 0;
+                                width: 50px;
+
+                            }
+                        }
+
+                        h3 {
+                            @include variables.Exo2_600;
+                            background: linear-gradient(90deg, rgba(251, 194, 31, 1) 0%, rgba(235, 86, 59, 1) 55%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+
+                        }
+                    }
+                }
+
+                .bullet-points {
+
+                    ul {
+                        list-style: none;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+
+                        @media all and (max-width: 768px) {
+                            grid-template-columns: 1fr 1fr;
+
+
+                        }
+
+                        li {
+                            display: flex;
+                            align-items: top;
+                            @include variables.Exo2_600;
+                            padding: 6px 4px;
+
+                            span {
+                                margin-right: 6px;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                color: variables.$primary_color;
+
+                                &:hover {
+                                    text-decoration: underline;
+                                    color: variables.$secondary_color;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
