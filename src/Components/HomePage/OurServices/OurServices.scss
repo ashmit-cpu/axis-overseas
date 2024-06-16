@@ -3,26 +3,71 @@
 .OurServices {
     .row {
         display: flex;
+        @media all and (max-width: 768px) {
+            flex-direction: column;
+        }
 
         .left-col {
             width: 35%;
             padding: 60px;
             background-color: rgb(57, 176, 218);
+            z-index: 2;
+            position: relative;
+            @media all and (max-width: 992px) {
+                padding: 40px;
+
+
+            }
+            @media all and (max-width: 768px) {
+                width: 100%;
+            }
+            @media all and (max-width: 576px) {
+                padding: 14px;
+
+            }
 
             .content {
 
                 border: 2px solid white;
                 padding: 40px;
                 position: relative;
-                // left: 100px;
                 width: 130%;
 
-                h2{
-                   @include variables.h2_style;
-                    color: white;
-                      
+                
+
+                
+
+                @media all and (max-width: 1200px) {
+                    width: 138%;
+
                 }
-                p{
+
+                @media all and (max-width: 992px) {
+                    width: 130%;
+                padding: 30px;
+
+
+                }
+                @media all and (max-width: 768px) {
+                    width: 100%;
+
+                }
+                @media all and (max-width: 576px) {
+                    padding: 18px;
+
+
+                }
+
+         
+
+
+                h2 {
+                    @include variables.h2_style;
+                    color: white;
+
+                }
+
+                p {
                     font-size: 14px;
                     color: white;
                     width: 90%;
@@ -34,20 +79,173 @@
 
         .right-col {
             width: 65%;
-            background-color: variables.$primary_color;
             position: relative;
-            z-index: -1;
+            z-index: 1;
 
-            .evaluation-bg{
+            @media all and (max-width: 768px) {
+                width: 100%;
+            }
+
+
+            .evaluation-bg {
                 position: absolute;
                 top: 20%;
                 left: -50px;
+                z-index: 1;
 
-                img{
+                img {
                     width: 200px;
 
                 }
             }
+
+            .carousel {
+                background-color: variables.$primary_color;
+                position: relative;
+                top: 5%;
+                height: 90%;
+
+                .card-container {
+                    width: 100%;
+                    position: relative;
+                    top: 10%;
+                    @media all and (max-width: 768px) {
+                       padding: 40px 0;
+                    }
+
+                    .card {
+                        background-color: variables.$primary_color;
+                        padding: 80px 10%;
+
+                        @media all and (max-width: 992px) {
+                            padding: 60px 8%;
+
+        
+        
+                        }
+                        @media all and (max-width: 576px) {
+                            padding: 60px 14px;
+
+    
+                        }
+
+                        h2 {
+                            color: white;
+                            padding-bottom: 10px;
+                        }
+
+                        p {
+                            color: rgb(194, 189, 189);
+                        }
+                    }
+
+
+
+
+                    // swiper js styling 
+
+                    .swiper-button-prev {
+                        background-color: none;
+                        background: url('../../public/img/prev.png');
+                        position: absolute !important;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        top: 10%;
+                        bottom: auto;
+                        right: 60px;
+                        left: auto;
+                        width: 24px;
+                        height: 24px;
+                        opacity: 0.9;
+                        cursor:  pointer!important;
+                        z-index: 99;
+                        @media all and (max-width: 576px) {
+                            right: 14px;
+
+            
+                        }
+
+
+                        &::after {
+                            display: none;
+                        }
+
+
+
+                    }
+
+                    .swiper-button-next {
+                        background-color: none;
+                        background: url('../../public/img/next.png');
+                        position: absolute !important;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        top: 25%;
+                        bottom: auto;
+                        right: 60px;
+                        left: auto;
+                        width: 24px;
+                        height: 24px;
+                        opacity: 0.9;
+                        cursor:  pointer!important;
+
+                        @media all and (max-width: 576px) {
+                            right: 14px;
+
+            
+                        }
+
+                        &::after {
+                            display: none;
+                        }
+                    }
+
+                    .swiper-pagination-bullet {
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background-color: white;
+
+
+                    }
+
+                    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+                    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+                        margin: 0 5px;
+                    }
+
+                    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+                        background: variables.$bg-color;
+
+
+                    }
+
+                    .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+                        width: fit-content;
+                        left: auto;
+                        right: 80px;
+                        bottom: 0;
+
+
+                        @media all and (max-width: 768px) {
+                            right: 30px;
+
+
+                        }
+                        @media all and (max-width: 576px) {
+                            right: 14px;
+
+            
+                        }
+
+
+                    }
+
+                }
+
+            }
+
+
         }
     }
 }

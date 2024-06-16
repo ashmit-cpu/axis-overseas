@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+.Immigration .container {
+  padding: 80px 80px;
+}
+@media all and (min-width: 2000px) {
+  .Immigration .container {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 1200px) {
+  .Immigration .container {
+    padding: 80px 60px;
+  }
+}
+@media all and (max-width: 992px) {
+  .Immigration .container {
+    padding: 80px 30px;
+  }
+}
+@media all and (max-width: 768px) {
+  .Immigration .container {
+    padding: 80px 26px;
+  }
+}
+@media all and (max-width: 576px) {
+  .Immigration .container {
+    padding: 50px 14px;
+  }
+}
+.Immigration .container h2 {
+  font-size: 44px;
+  padding-bottom: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  color: rgb(14, 72, 94);
+  text-align: center;
+  padding-bottom: 40px;
+}
+@media all and (max-width: 1200px) {
+  .Immigration .container h2 {
+    font-size: 42px;
+  }
+}
+@media all and (max-width: 992px) {
+  .Immigration .container h2 {
+    font-size: 40px;
+  }
+}
+@media all and (max-width: 768px) {
+  .Immigration .container h2 {
+    font-size: 38px;
+  }
+}
+@media all and (max-width: 576px) {
+  .Immigration .container h2 {
+    font-size: 28px;
+  }
+}
+.Immigration .container h2 span {
+  color: rgb(237, 104, 76);
+}
+.Immigration .container p {
+  font-size: 17px;
+  color: rgb(28, 28, 28);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  line-height: 1.275;
+  font-weight: 500;
+  text-align: center;
+}
+@media all and (max-width: 992px) {
+  .Immigration .container p {
+    font-size: 16px;
+  }
+}
+.Immigration .container .mySwiper {
+  padding: 100px 0 0;
+  text-align: center;
+  position: relative;
+}
+.Immigration .container .mySwiper .swiper-slide {
+  background-color: white;
+}
+.Immigration .container .mySwiper .card .content {
+  padding-top: 40px;
+  display: none;
+}
+.Immigration .container .mySwiper .card .content p {
+  font-size: 17px;
+  color: rgb(28, 28, 28);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  line-height: 1.275;
+  font-weight: 500;
+}
+@media all and (max-width: 992px) {
+  .Immigration .container .mySwiper .card .content p {
+    font-size: 16px;
+  }
+}
+.Immigration .container .mySwiper .card .content.show {
+  display: block;
+}
+.Immigration .container .mySwiper img {
+  width: 80%;
+  height: fit-content;
+  max-height: 500px;
+  object-fit: contain;
+  object-position: top;
+}
+@media all and (max-width: 768px) {
+  .Immigration .container .mySwiper img {
+    width: 100%;
+  }
+}
+.Immigration .container .mySwiper .button-container {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  z-index: 2;
+}
+@media all and (max-width: 992px) {
+  .Immigration .container .mySwiper .button-container {
+    top: 7%;
+    right: 10%;
+  }
+}
+.Immigration .container .mySwiper .button-container button {
+  margin: 6px 20px;
+  padding: 16px;
+  border: none;
+  outline: none;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  background: white;
+  z-index: 2;
+  color: rgb(14, 72, 94);
+  clip-path: polygon(0 13%, 100% 13%, 100% 87%, 59% 87%, 50% 100%, 39% 86%, 0 86%);
+  transition: all 0.4s;
+  display: inline-block;
+  border-radius: 20px;
+}
+@media all and (max-width: 992px) {
+  .Immigration .container .mySwiper .button-container button {
+    font-size: 16px;
+  }
+}
+.Immigration .container .mySwiper .button-container .active-btn {
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, rgb(251, 194, 31) 0%, rgb(235, 86, 59) 90%);
+  transition: all 0.4s;
+  border-radius: inherit;
+  color: white;
+  border-radius: 20px;
+}
