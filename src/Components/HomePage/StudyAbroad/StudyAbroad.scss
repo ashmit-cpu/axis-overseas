@@ -27,7 +27,7 @@
 
             .card {
                 display: flex;
-                background-color: variables.$bg-color;
+                background-color: variables.$bg-color-2;
                 min-height: 300px;
                 max-height: 100%;
                 position: relative;
@@ -40,11 +40,18 @@
                     position: absolute;
                     inset: -1px;
                     z-index: -1;
-                    background: linear-gradient(90deg, rgba(251, 194, 31, 1) 0%, rgba(235, 86, 59, 1) 55%);
+                    @include variables.color-gradient;
+                    opacity: 0;
+                    transition: all 0.4s;
+
                 }
 
                 &:hover {
                     border: 2px;
+                    &::before {
+                        
+                        opacity: 1;
+                    }
 
                     .right-col {
                         .apply-btn {
@@ -102,7 +109,8 @@
                             margin-top: -5px;
                             @include variables.Exo2_600;
                             color: variables.$primary_color;
-                            &:hover{
+
+                            &:hover {
                                 text-decoration: underline;
                             }
                         }
@@ -119,6 +127,33 @@
 
                 }
             }
+
+           
+
+            
+        }
+
+         // swiper js styling
+         .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: variables.$primary_color;
+
+
+        }
+
+        .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+            margin: 0 5px;
+        }
+
+        .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background: variables.$primary_color;
+            width: 10px;
+            height: 10px;
+
+
         }
 
     }

@@ -1,10 +1,24 @@
 @use '../../../Partials/variables';
 
 .Herosection {
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        z-index: 4;
+        width: 100%;
+        height: 40%;
+        background: rgb(250,250,250);
+        background: linear-gradient(166deg, rgba(250,250,250,1) 10%, rgba(250,250,250,0) 30%, rgba(250,250,250,0) 100%);
+    }
+
+   
+   
     .row {
         display: flex;
+
         @media all and (max-width: 992px) {
-           flex-direction: column;
+            flex-direction: column;
         }
 
         .left-col {
@@ -13,16 +27,17 @@
             @media all and (max-width: 992px) {
                 width: 100%;
 
-             }
+            }
 
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+
                 @media all and (max-width: 992px) {
                     max-height: 400px;
-    
-                 }
+
+                }
             }
         }
 
@@ -30,12 +45,14 @@
             width: 55%;
             position: relative;
             padding: 80px 40px;
+
             @media all and (max-width: 992px) {
                 width: 100%;
                 margin-top: -6px;
 
-             }
-             @media all and (max-width: 576px) {
+            }
+
+            @media all and (max-width: 576px) {
                 padding: 60px 14px;
 
             }
@@ -49,6 +66,7 @@
             p {
                 color: white;
                 width: 80%;
+
                 @media all and (max-width: 576px) {
                     width: 100%;
 
@@ -87,6 +105,7 @@
                     color: variables.$primary_color;
                     border-radius: 6px;
                     border: none;
+
                     @media all and (max-width: 576px) {
                         width: 100%;
 
@@ -107,6 +126,13 @@
                     border: none;
                     font-size: 18px;
                     cursor: pointer;
+                    transition: all 0.4s;
+
+                    &:hover {
+                        @include variables.box-shadow;
+                        transform: translateY(-2px);
+
+                    }
 
                     span {
                         margin-left: 3px;
@@ -127,6 +153,7 @@
                 position: absolute;
                 right: 60px;
                 bottom: -40px;
+                z-index: 6;
 
 
 
@@ -162,5 +189,38 @@
                 }
             }
         }
+    }
+
+    // shape divider 
+
+    .custom-shape-divider-bottom-1718612968 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1718612968 svg {
+        position: relative;
+        display: block;
+        width: calc(160% + 1.3px);
+        height: 113px;
+
+        @media all and (max-width: 1200px) {
+            height: 60px;
+
+        }
+        @media all and (max-width: 576px) {
+            height: 40px;
+
+
+        }
+    }
+    
+    .custom-shape-divider-bottom-1718612968 .shape-fill {
+        fill: #FFFFFF;
     }
 }

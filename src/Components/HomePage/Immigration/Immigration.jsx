@@ -9,6 +9,7 @@ import 'swiper/css/effect-fade';
 
 // Import required modules
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 function Immigration() {
     const [swiperInstance, setSwiperInstance] = useState(null);
@@ -25,12 +26,12 @@ function Immigration() {
     return (
         <div className='Immigration'>
             <div className="container">
-                <h2><span>Immi</span>gration</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod modi blanditiis praesentium odit libero nulla voluptatem aliquam excepturi velit, beatae rem nihil officiis nemo inventore. Cupiditate qui ratione tenetur!</p>
+                <h2 data-aos="fade" data-aos-duration="1000"><span>Immi</span>gration</h2>
+                <p data-aos="fade" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod modi blanditiis praesentium odit libero nulla voluptatem aliquam excepturi velit, beatae rem nihil officiis nemo inventore. Cupiditate qui ratione tenetur!</p>
 
 
 
-                <div className="carousel">
+                <div className="carousel" data-aos="fade" data-aos-duration="1000">
                     <Swiper
                         onSwiper={setSwiperInstance}
                         spaceBetween={0}
@@ -68,11 +69,11 @@ function Immigration() {
                             </div>
                         </SwiperSlide>
                         <div className="button-container">
-                            <button onClick={() => goToSlide(0)}  className={activeButton === 0 ? 'active-btn' : ''}>Canada</button>
-                            <button onClick={() => goToSlide(1)}  className={activeButton === 1 ? 'active-btn' : ''}>Australia</button>
+                            <button onClick={() => goToSlide(0)} className={activeButton === 0 ? 'active-btn' : ''}>Canada</button>
+                            <button onClick={() => goToSlide(1)} className={activeButton === 1 ? 'active-btn' : ''}>Australia</button>
                         </div>
                     </Swiper>
-
+                    <Link to={'#'} className='apply-btn'>Apply Now</Link>
 
                 </div>
 

@@ -1,15 +1,16 @@
 import React from 'react';
-import '../../../styles/AboutIntro.css'
+import '../../../styles/AboutIntro.css';
+
 
 function AboutIntro() {
     return (
         <div className='AboutIntro'>
             <div className="container">
                 <div className="row">
-                    <div className="left-col">
+                    <div className="left-col custom-fade-right"data-aos="custom-fade-right" data-aos-duration="1000">
                         <img src="img/AboutIntro-img.png" alt="about intro" />
                     </div>
-                    <div className="right-col">
+                    <div className="right-col custom-fade-left"data-aos="custom-fade-left"data-aos-duration="1000">
                         <h2><span>12 Years of Experience</span> in Education and Immigration  Consultantation services</h2>
                         <p>Axis Overseas Careers® is the Final Destination for Immigration Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quas recusandae ad, est minus officiis non facere ullam ipsam animi quaerat ut neque molestias quibusdam reiciendis unde nobis fuga accusantium.</p>
                         <div className="icon-card-section">

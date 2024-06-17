@@ -15,10 +15,10 @@ function StudyAbroad() {
     return (
         <div className='StudyAbroad'>
             <div className="container">
-                <h2>Study <span>Abroad</span></h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, enim. Sed a, necessitatibus quibusdam dolorum iusto eos nostrum culpa qui repudiandae eaque, labore adipisci laboriosam praesentium incidunt veniam esse ratione. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem harum blanditiis perspiciatis voluptate ex rerum saepe et, libero aspernatur consequuntur a nostrum excepturi tempore dignissimos ab ipsum alias aperiam est.</p>
+                <h2 data-aos="fade" data-aos-duration="1000">Study <span>Abroad</span></h2>
+                <p data-aos="fade" data-aos-duration="1000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, enim. Sed a, necessitatibus quibusdam dolorum iusto eos nostrum culpa qui repudiandae eaque, labore adipisci laboriosam praesentium incidunt veniam esse ratione. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem harum blanditiis perspiciatis voluptate ex rerum saepe et, libero aspernatur consequuntur a nostrum excepturi tempore dignissimos ab ipsum alias aperiam est.</p>
 
-                <div className="card-carousels">
+                <div className="card-carousels"data-aos="fade" data-aos-duration="1000">
                     <Swiper
                         slidesPerView={1}
                         spaceBetween={20}

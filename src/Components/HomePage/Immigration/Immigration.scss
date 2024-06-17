@@ -21,96 +21,135 @@
 
         }
 
-
-        .mySwiper {
-            padding: 100px 0 0;
+        .carousel {
             text-align: center;
-            position: relative;
+
+
+            .mySwiper {
+                padding: 100px 0 0;
+                text-align: center;
+                position: relative;
 
 
 
-            .swiper-slide {
-                background-color: white;
+                .swiper-slide {
+                    background-color: white;
 
-            }
+                }
 
-            .card{
-                .content{
-                    padding-top: 40px;
-                    display: none;
-                    p{
-                        @include variables.p_style;
+                .card {
+                    .content {
+                        padding-top: 40px;
+                        display: none;
+
+                        p {
+                            @include variables.p_style;
+                        }
+                    }
+
+                    .content.show {
+                        display: block;
                     }
                 }
-                .content.show{
-                    display: block;
+
+                img {
+                    width: 80%;
+                    height: fit-content;
+                    max-height: 500px;
+                    object-fit: contain;
+                    object-position: top;
+
+                    @media all and (max-width: 768px) {
+                        width: 100%;
+
+                    }
                 }
-            }
-
-            img {
-                width: 80%;
-                height: fit-content;
-                max-height: 500px;
-                object-fit: contain;
-                object-position: top;
-
-                @media all and (max-width: 768px) {
-                    width: 100%;
-
-                }
-            }
 
 
-            .button-container {
-                position: absolute;
-                top: 5%;
-                right: 10%;
-                z-index: 2;
-
-                @media all and (max-width: 992px) {
-                    top: 7%;
-
+                .button-container {
+                    position: absolute;
+                    top: 5%;
                     right: 10%;
-
-                }
-
-                button {
-                    margin: 6px 20px;
-                    padding: 16px;
-                    border: none;
-                    outline: none;
-                    @include variables.Exo2_600;
-                    font-size: 20px;
-                    background: white;
                     z-index: 2;
-                    color: variables.$primary_color;
-                    clip-path: polygon(0 13%, 100% 13%, 100% 87%, 59% 87%, 50% 100%, 39% 86%, 0 86%);
-                    transition: all 0.4s;
-                    display: inline-block;
-                    border-radius: 20px;
 
                     @media all and (max-width: 992px) {
-                        font-size: 16px;
+                        top: 7%;
+
+                        right: 10%;
+
                     }
 
+                    button {
+                        margin: 6px 20px;
+                        padding: 16px;
+                        border: none;
+                        outline: none;
+                        @include variables.Exo2_600;
+                        font-size: 20px;
+                        background: white;
+                        z-index: 2;
+                        color: variables.$primary_color;
+                        clip-path: polygon(0 13%, 100% 13%, 100% 87%, 59% 87%, 50% 100%, 39% 86%, 0 86%);
+                        transition: all 0.4s;
+                        display: inline-block;
+                        border-radius: 20px;
+                        cursor: pointer;
+
+                        @media all and (max-width: 992px) {
+                            font-size: 16px;
+                        }
+
+                        &:hover {
+                            @include variables.box-shadow;
+                            transform: translateY(-2px);
+        
+                        }
 
 
-                }
 
-                .active-btn {
-                    inset: 0;
-                    z-index: 1;
-                    background: linear-gradient(90deg, rgba(251, 194, 31, 1) 0%, rgba(235, 86, 59, 1) 90%);
-                    transition: all 0.4s;
-                    border-radius: inherit;
-                    color: white;
-                    border-radius: 20px;
+                    }
+
+                    .active-btn {
+                        inset: 0;
+                        z-index: 1;
+                        @include variables.color-gradient;
+                        transition: all 0.4s;
+                        border-radius: inherit;
+                        color: white;
+                        border-radius: 20px;
+                        
 
 
 
 
+                    }
                 }
             }
+
+            .apply-btn {
+                @include variables.color-gradient;
+                padding: 10px 16px;
+                display: inline-block;
+                color: white;
+                text-decoration: none;
+                @include variables.Exo2_600;
+                border-radius: 10px;
+                margin-top: 40px;
+                transition: all 0.4s;
+
+                &:hover {
+                    @include variables.box-shadow;
+                    transform: translateY(-2px);
+
+                }
+
+
+
+            }
         }
+
+
+
+
     }
 }

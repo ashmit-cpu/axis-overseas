@@ -3,10 +3,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
 .OurServices .row {
   display: flex;
+  /* .right-col animation styling */
 }
 @media all and (max-width: 768px) {
   .OurServices .row {
     flex-direction: column;
+  }
+}
+.OurServices .row .custom-fade-right[data-aos=custom-fade-right] {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+.OurServices .row .custom-fade-right.aos-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+@media all and (max-width: 768px) {
+  .OurServices .row .custom-fade-right[data-aos=custom-fade-right] {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  .OurServices .row .custom-fade-right.aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.OurServices .row .custom-fade-left[data-aos=custom-fade-left] {
+  opacity: 0;
+  transform: translateX(100px);
+}
+.OurServices .row .custom-fade-left.aos-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+@media all and (max-width: 768px) {
+  .OurServices .row .custom-fade-left[data-aos=custom-fade-left] {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  .OurServices .row .custom-fade-left.aos-animate {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .OurServices .row .left-col {
@@ -158,14 +195,18 @@
   left: auto;
   width: 24px;
   height: 24px;
-  opacity: 0.9;
   cursor: pointer !important;
   z-index: 99;
+  opacity: 0.7;
+  transition: all 0.4s;
 }
 @media all and (max-width: 576px) {
   .OurServices .row .right-col .carousel .card-container .swiper-button-prev {
     right: 14px;
   }
+}
+.OurServices .row .right-col .carousel .card-container .swiper-button-prev:hover {
+  opacity: 0.9;
 }
 .OurServices .row .right-col .carousel .card-container .swiper-button-prev::after {
   display: none;
@@ -182,8 +223,9 @@
   left: auto;
   width: 24px;
   height: 24px;
-  opacity: 0.9;
+  opacity: 0.7;
   cursor: pointer !important;
+  transition: all 0.4s;
 }
 @media all and (max-width: 576px) {
   .OurServices .row .right-col .carousel .card-container .swiper-button-next {
@@ -192,6 +234,9 @@
 }
 .OurServices .row .right-col .carousel .card-container .swiper-button-next::after {
   display: none;
+}
+.OurServices .row .right-col .carousel .card-container .swiper-button-next:hover {
+  opacity: 0.9;
 }
 .OurServices .row .right-col .carousel .card-container .swiper-pagination-bullet {
   width: 8px;

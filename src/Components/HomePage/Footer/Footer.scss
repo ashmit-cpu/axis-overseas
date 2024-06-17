@@ -1,0 +1,138 @@
+@use '../../../Partials/variables';
+
+.Footer {
+    background-color:variables.$bg-color-2;
+
+    .container {
+        padding: 40px 80px;
+
+        @media all and (min-width: 2000px) {
+            max-width: 85%;
+            margin: 0 auto;
+        }
+
+        @media all and (max-width: 1200px) {
+            padding: 40px 60px;
+        }
+
+        @media all and (max-width: 992px) {
+            padding: 40px 30px;
+        }
+
+        @media all and (max-width: 768px) {
+            padding: 40px 26px;
+        }
+
+        @media all and (max-width: 576px) {
+            padding: 20px 14px;
+
+        }
+
+        .logo {
+            img {
+                width: 250px;
+
+            }
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px 40px;
+
+            .col {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                padding-top: 20px;
+                @media all and (max-width: 992px) {
+                width: 40%;
+
+                }
+                @media all and (max-width: 768px) {
+                    width: 100%;
+
+
+                }
+
+
+                a {
+                    text-decoration: none;
+                    padding: 3px 0;
+                    color: variables.$font-color;
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: variables.$primary_color
+                    }
+                }
+
+                p {
+                    // @include variables.p_style
+                    @include variables.Exo2_400;
+                }
+
+                h4 {
+                    @include variables.Exo2_600;
+                    margin-bottom: 6px;
+                }
+
+                .links {
+                    ul {
+                        list-style: none;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        @media all and (max-width: 576px) {
+                            grid-template-columns: 1fr 1fr;
+
+    
+                        }
+                        li {
+                            padding: 8px;
+                            position: relative;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 6px;
+                                height: 1px;
+                                background-color: variables.$font-color;
+                                left: -4px;
+                                top: 50%;
+
+                            }
+
+                            a {
+                                @include variables.Exo2_400;
+
+
+                            }
+                        }
+                    }
+                }
+
+                .phone {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .copyright{
+        padding: 10px;
+        text-align: center;
+        @include variables.Exo2_400;
+        font-size: 14px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 90%;
+            background-color: variables.$font-color;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+    }
+}

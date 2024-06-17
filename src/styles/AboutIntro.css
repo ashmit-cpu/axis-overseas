@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
 .AboutIntro .container {
-  padding: 80px 80px;
+  padding: 60px 80px;
 }
 @media all and (min-width: 2000px) {
   .AboutIntro .container {
@@ -12,17 +12,17 @@
 }
 @media all and (max-width: 1200px) {
   .AboutIntro .container {
-    padding: 80px 60px;
+    padding: 60px 60px;
   }
 }
 @media all and (max-width: 992px) {
   .AboutIntro .container {
-    padding: 80px 30px;
+    padding: 60px 30px;
   }
 }
 @media all and (max-width: 768px) {
   .AboutIntro .container {
-    padding: 80px 26px;
+    padding: 60px 26px;
   }
 }
 @media all and (max-width: 576px) {
@@ -32,6 +32,43 @@
 }
 .AboutIntro .container .row {
   display: flex;
+  /* .right-col animation styling */
+}
+.AboutIntro .container .row .custom-fade-right[data-aos=custom-fade-right] {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+.AboutIntro .container .row .custom-fade-right.aos-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+@media all and (max-width: 768px) {
+  .AboutIntro .container .row .custom-fade-right[data-aos=custom-fade-right] {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  .AboutIntro .container .row .custom-fade-right.aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.AboutIntro .container .row .custom-fade-left[data-aos=custom-fade-left] {
+  opacity: 0;
+  transform: translateX(100px);
+}
+.AboutIntro .container .row .custom-fade-left.aos-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+@media all and (max-width: 768px) {
+  .AboutIntro .container .row .custom-fade-left[data-aos=custom-fade-left] {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  .AboutIntro .container .row .custom-fade-left.aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @media all and (max-width: 992px) {
   .AboutIntro .container .row {

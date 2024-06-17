@@ -1,0 +1,26 @@
+.Navbar {
+   position: absolute;
+   z-index: 5;
+    .logo {
+        padding: 20px;
+        @media all and (max-width: 576px) {
+            padding: 14px;
+
+
+            }
+
+        img {
+            width: 300px;
+            @media all and (max-width: 992px) {
+            width: 200px;
+
+            }
+            @media all and (max-width: 576px) {
+            width: 180px;
+
+            }
+
+
+        }
+    }
+}

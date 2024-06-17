@@ -1,7 +1,7 @@
 @use '../../../Partials/variables';
 
 .AboutIntro {
-
+    
     .container {
         @include variables.container_padding;
 
@@ -9,13 +9,17 @@
             display: flex;
             // align-items: end;
 
+            @include variables.custom-fade-right;
+            @include variables.custom-fade-left;
+
             @media all and (max-width: 992px) {
                 flex-direction: column;
             }
 
             .left-col {
                 width: 50%;
-
+                
+                
                 @media all and (max-width: 992px) {
                     text-align: center;
                     width: 100%;

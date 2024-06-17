@@ -5,6 +5,7 @@ import AboutIntro from '../Components/HomePage/AboutIntro/AboutIntro'
 import OurServices from '../Components/HomePage/OurServices/OurServices'
 import StudyAbroad from '../Components/HomePage/StudyAbroad/StudyAbroad'
 import Immigration from '../Components/HomePage/Immigration/Immigration'
+import Footer from '../Components/HomePage/Footer/Footer'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
         <OurServices/>
         <StudyAbroad/>
         <Immigration/>
+        <Footer/>
     </div>
   )
 }

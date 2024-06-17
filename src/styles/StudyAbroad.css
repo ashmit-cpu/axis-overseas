@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
 .StudyAbroad .container {
-  padding: 80px 80px;
+  padding: 60px 80px;
 }
 @media all and (min-width: 2000px) {
   .StudyAbroad .container {
@@ -12,17 +12,17 @@
 }
 @media all and (max-width: 1200px) {
   .StudyAbroad .container {
-    padding: 80px 60px;
+    padding: 60px 60px;
   }
 }
 @media all and (max-width: 992px) {
   .StudyAbroad .container {
-    padding: 80px 30px;
+    padding: 60px 30px;
   }
 }
 @media all and (max-width: 768px) {
   .StudyAbroad .container {
-    padding: 80px 26px;
+    padding: 60px 26px;
   }
 }
 @media all and (max-width: 576px) {
@@ -81,7 +81,7 @@
 }
 .StudyAbroad .container .swiper-wrapper .card {
   display: flex;
-  background-color: #fafafa;
+  background-color: rgb(248, 248, 248);
   min-height: 300px;
   max-height: 100%;
   position: relative;
@@ -93,10 +93,15 @@
   position: absolute;
   inset: -1px;
   z-index: -1;
-  background: linear-gradient(90deg, rgb(251, 194, 31) 0%, rgb(235, 86, 59) 55%);
+  background: linear-gradient(90deg, rgb(251, 194, 31) 0%, rgb(235, 86, 59) 90%);
+  opacity: 0;
+  transition: all 0.4s;
 }
 .StudyAbroad .container .swiper-wrapper .card:hover {
   border: 2px;
+}
+.StudyAbroad .container .swiper-wrapper .card:hover::before {
+  opacity: 1;
 }
 .StudyAbroad .container .swiper-wrapper .card:hover .right-col .apply-btn {
   visibility: visible;
@@ -162,4 +167,19 @@
   width: 18px;
   display: inline-block;
   margin-right: 5px;
+}
+.StudyAbroad .container .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(14, 72, 94);
+}
+.StudyAbroad .container .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.StudyAbroad .container .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 5px;
+}
+.StudyAbroad .container .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: rgb(14, 72, 94);
+  width: 10px;
+  height: 10px;
 }
